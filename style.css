@@ -1,0 +1,46 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+/* @font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-VariableFont_wdth\,wght.ttf);
+} */
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+* {
+    font-family: Roboto;
+}
+
+.main-container {
+    display: grid;
+
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+
+    font-style: italic;
+}
+
+.sidebar {
+    grid-row: 1/-1;
+
+    background-color: rgb(67, 154, 225);
+
+}
+
+.sidebar>ul {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
